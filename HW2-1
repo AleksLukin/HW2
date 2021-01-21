@@ -1,0 +1,22 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace HW2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Введите максимальную температуру за сутки");
+            int maxTemperature = int.Parse(Console.ReadLine());
+            Console.WriteLine("Введите минимальную температуру за сутки");
+            int minTemperature = int.Parse(Console.ReadLine());
+
+            int middleTemperature = (maxTemperature + minTemperature) / 2;
+            Console.WriteLine($"Среднесуточная температура равна {middleTemperature}");   
+            Console.ReadLine();
+        }
+    }
